@@ -1,0 +1,214 @@
+:root {
+    --background-color: #00090E;
+    --text-color: #E1E1E1;
+    --primary-color: #81FE88;
+    --secundary-color: #888888;
+    --tag-color: #171D1F;
+    --font-family: "Prompt", sans-serif;
+    --itens-background: #171D1F;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    height: 100vh;
+    gap: 1.8rem;
+    padding: 3.5rem 0;
+}
+
+aside {
+    background-color: var(--itens-background);
+    border-radius: .65rem;
+    height: 100%;
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+
+.lista-links li {
+    padding: 1.5rem 0;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .8rem;
+    text-decoration: none;
+    color: var(--secundary-color);
+}
+
+.link-destaque {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: .7rem .3rem;
+    border-radius: .65rem;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+main {
+    background-color: var(--itens-background);
+    border-radius: .65rem;
+    padding: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    width: 100vh;
+}
+
+ul {
+    list-style-type: none
+}
+
+h2 {
+    font-weight: 600;
+    padding-bottom: 3rem;
+}
+
+.container-descricao label {
+    display: flex;
+    padding-bottom: .5rem;
+    flex-direction: column;
+}
+
+.container-descricao input {
+    margin-bottom: 1.5rem;
+    border-radius: .3rem;
+    border: none;
+    background-color: var(--secundary-color);
+    padding: .65rem;
+    width: 40vh;
+}
+
+form textarea {
+    background-color: var(--secundary-color);
+    border-radius: .3rem;
+    border: none;
+    margin-bottom: 1.5rem;
+    width: 40vh;
+    height: 150px;
+    font-family: var(--font-family);
+    padding: .5rem 1rem;
+}
+
+.container-upload-imagem button{
+    border-radius: .4rem;
+    color: var(--secundary-color);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    border: 1px solid var(--secundary-color);
+    background-color: transparent;
+    margin-top: .8rem;
+    cursor: pointer;
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+.container-upload-imagem img{
+    padding-left: .4rem;
+    border-radius: .8rem;
+}
+
+.container-imagem {
+    background-color: var(--secundary-color);
+    padding: 1.5rem 1rem;
+    border-radius: .5rem;
+    height: 368px;
+}
+
+.main-imagem {
+    border-radius: .5rem;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container-imagem-nome {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    margin-top: .4rem;
+}
+
+.container-imagem-nome p {
+    color: var(--secundary-color);
+    font-size: .7rem;
+}
+
+.container-imagem-nome img {
+    width: 2.7%;
+}
+
+.lista-tags {
+    display: flex;
+    margin-bottom: 2.5rem;
+    gap: 1rem;
+}
+
+.lista-tags li{
+    border: none;
+    background-color: var(--secundary-color);
+    color: var(--background-color);
+    border-radius: .3rem;
+    padding: .4rem .5rem;
+    display: flex;
+}
+
+.lista-tags img {
+    padding-left: .7rem;
+    cursor: pointer;
+}
+
+.container-botoes{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: .5rem;
+}
+
+.botao-descartar {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    border-radius: .3rem;
+    padding: .9rem 2.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+}
+
+.botao-descartar img {
+    padding-left: .5rem;
+}
+
+.botao-publicar {
+    color: var(--itens-background);
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: .3rem;
+    padding: .9rem 2.6rem;
+    font-weight: 800;
+    font-size: .9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.botao-publicar img {
+    padding-left: .5rem;
+}
